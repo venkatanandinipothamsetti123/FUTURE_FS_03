@@ -1,0 +1,200 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgb(225, 225, 186);
+    /* background-color:#ff5c8a; */
+    color:black;
+}
+nav{
+    background-color:olive;
+    display:flex;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:15px;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    box-sizing:border-box;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+*{
+    margin:0;
+    padding:0;
+}
+.home_page{
+    padding-top:100px;
+    display:flex;
+    color:blue;
+    justify-content:flex-start;
+}
+.home_right{
+    width:50%;
+}
+.about-us{
+    padding-left:400px;
+    padding-bottom: 240px;
+    width:560px;
+    height:200px;
+    border-radius:20%;
+    text-align:center;
+}
+.box{
+    width:280px;
+    height:330px;
+    border-radius:10%;
+    background-color:rgb(77, 77, 18);
+}
+.services_page{
+    padding-right:20px;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:30px;
+    /* align-items:center; */
+}
+.service{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:space-around;
+}
+form{
+    display:flex;
+    padding-left:400px;
+    flex-direction:column;
+    gap:10px;
+    width:500px;
+}
+.ratings{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+}
+.rat_table{
+    border-radius:10%;
+    width:200px;
+    height:140px;
+    background-color:rgb(204, 169, 124);
+    text-align:center;
+}
+.contact_table{
+    width:450px;
+    height:250px;
+    display:flex;
+    flex-direction:column;
+    gap:3px; 
+    background-color:rgb(197, 160, 112);
+    justify-content:space-even;
+    padding:10px;
+    align-items:flex-start;
+}
+nav a:hover{
+    color:rgb(230, 176, 26);
+    font-size:19px;
+    text-decoration: underline;
+}
+.box:hover{
+    background-color:white;
+}
+/* =====================
+   MOBILE RESPONSIVE
+   ===================== */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.about-us{
+    max-width:560px;
+    width:90%;
+    margin:auto;
+    padding-left:0;
+    padding-right:0;
+}
+
+form{
+    width:90%;
+    max-width:500px;
+    margin:auto;
+    padding-left:0;
+}
+
+.contact_table{
+    width:90%;
+    max-width:450px;
+    margin:auto;
+}
+@media (max-width:768px){
+    nav{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+        overflow:hidden;
+    }
+    nav div:last-child{
+        width:100%;
+        overflow-x:auto;
+        white-space:nowrap;
+        text-align:center;
+    }
+    nav a{
+        display:inline-block;
+        margin:0 8px;
+    }
+    .home_page{
+        flex-direction:column;
+    }
+
+    .home_right{
+        width:100%;
+    }
+
+    .home_right p{
+        padding-top:20px;
+    }
+
+    .services_page{
+        justify-content:center;
+    }
+    .box{
+    width:calc(50% - 20px);
+    max-width:none;
+    }
+    .services_page{
+    justify-content:center;
+    gap:15px;
+    }
+    section{
+    scroll-margin-top:120px;
+    }
+    .ratings{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .rat_table{
+        width:90%;
+        max-width:250px;
+    }
+
+    #contact{
+        padding-left:0 ;
+        padding-top:100px ;
+    }
+
+    #appointment{
+        padding-top:120px ;
+        padding-bottom:100px;
+    }
+
+    #about{
+        padding-top:120px ;
+        padding-bottom:120px ;
+    }
+}
